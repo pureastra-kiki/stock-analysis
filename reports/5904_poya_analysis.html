@@ -280,8 +280,8 @@
   <span class="pad enabled" onclick="goTo('step1')">① 現金流六大規則</span>
   <span class="pad enabled" onclick="goTo('step2')">② 基本資訊</span>
   <span class="pad enabled" onclick="goTo('step3')">③ 法說會資料</span>
-  <span class="pad active enabled" onclick="goTo('step4')">④ 營收趨勢</span>
-  <span class="pad locked">⑤ 前瞻本益比</span>
+  <span class="pad enabled" onclick="goTo('step4')">④ 營收趨勢</span>
+  <span class="pad active enabled" onclick="goTo('step5')">⑤ 前瞻本益比</span>
   <span class="pad locked">⑥ 投資決策</span>
 </nav>
 
@@ -926,6 +926,66 @@
 
   <div class="callout">
     <b>小結：</b>營收成長動能與第3步法說會提到的「展店＋美妝店轉型＋電商OMO」策略相互印證，過去12個月扣除春節基期干擾後，年增率大致維持在雙位數區間（+13%~+23%），成長動能並未隨股本擴增而稀釋（總營收持續墊高新高，而非僅每股數字受惠分割膨脹）。
+  </div>
+</section>
+
+<section id="step5">
+  <div class="step-eyebrow">【第 5 步／共 6 步：前瞻本益比／EPS 預估】</div>
+  <h2>現在貴不貴？前瞻本益比與目標價試算</h2>
+
+  <div class="callout warn">
+    <b>股本基礎再次提醒：</b>目前查到的法人年度獲利預估，數字量級對應的仍是<b>分割前股數（約1.06億股）</b>，必須先換算成分割後 10.6444 億股基礎，才能跟目前 79 元股價放在同一把尺上比較——這正是第2步埋下的伏筆。
+  </div>
+
+  <div class="card">
+    <div class="rule-title"><h3>目前的本益比水位</h3></div>
+    <table>
+      <tbody>
+        <tr><td>目前股價（2026/08/14）</td><td class="num">79.00 元</td></tr>
+        <tr><td>近四季合計EPS（回推，分割後基礎）</td><td class="num">約 3.4 元</td></tr>
+        <tr><td>近四季本益比</td><td class="num">23.2 倍</td></tr>
+        <tr><td>自身歷史本益比分位（2013年至今）</td><td class="num">約第52百分位</td></tr>
+      </tbody>
+    </table>
+    <p>依 <cite index="80-1">收盤價79元與本益比23.2倍回推，寶雅近四季合計EPS約3.4元；本益比目前落在2013年以來自身分佈的第52百分位</cite>，換句話說，以寶雅自己的歷史區間來看，目前估值大致落在「不便宜也不算貴」的中段位置，並非近年相對極端的高點或低點。</p>
+    <p style="font-size:13px;color:var(--ink-muted);">⚠️ Yahoo股市另顯示「同業平均本益比43.04倍」，數字上遠高於寶雅的23.24倍，但這個同業平均的樣本組成（哪些公司、如何加權）未經查證，暫不採信「寶雅遠比同業便宜」這個結論，僅供參考。與自身歷史分位相比，後者是較可靠的比較基準。</p>
+  </div>
+
+  <div class="card">
+    <div class="rule-title"><h3>前瞻本益比（已知股價，求隱含倍數）</h3></div>
+    <table>
+      <thead><tr><th>項目</th><th>分割前基礎</th><th>換算分割後基礎（÷10.6444億股）</th></tr></thead>
+      <tbody>
+        <tr><td>法人預估2026全年稅後純益（區間）</td><td class="num">36.09 ～ 37.8 億元</td><td class="num">同左（金額不受股本分割影響）</td></tr>
+        <tr><td>對應預估EPS</td><td class="num">約 31.83 ～ 38 元</td><td class="num pos">約 3.39 ～ 3.55 元</td></tr>
+        <tr><td>以現價79元回推前瞻本益比</td><td class="num">—</td><td class="num pos">約 22.3 ～ 23.3 倍</td></tr>
+      </tbody>
+    </table>
+    <p>前瞻本益比（現在股價 ÷ 預估EPS）落在 <b>22.3～23.3倍</b>，跟近四季本益比 23.2倍幾乎持平——代表市場目前的定價，大致已經反映了法人預估的 2026 全年獲利成長，沒有明顯的「提前透支未來成長」或「還沒反映成長」的落差。</p>
+    <p class="chart-caption">📎 來源：<a href="https://readmo.cmoney.tw/article/00d60afb-7432-402c-a8d9-fb398cf58e27" target="_blank">CMoney/Readmo AI彙整頁面</a>（37.8億元／31.83~38.38元，該頁面明確標註「本頁面由AI生成，可能會發生錯誤」）與第2步引用的另一篇同類型彙整報導（36.09億元／31.83~36元）交叉比對；由於兩份數字皆來自AI自動彙整的財經頁面而非券商原始研究報告，此區間僅供方向性參考，精確度有限。</p>
+  </div>
+
+  <div class="card">
+    <div class="rule-title"><h3>目標本益比法（已知倍數，求目標價）</h3></div>
+    <p>目標本益比法與前瞻本益比是同一公式的不同用法：前者已知股價反推倍數，這裡則是<b>假設合理倍數，反推目標價</b>，答案對「倍數怎麼選」高度敏感，沒有標準答案，純粹是敏感度試算。以預估EPS中位數約 3.47 元為基礎：</p>
+    <table>
+      <thead><tr><th>假設本益比情境</th><th>對應目標價</th><th>相對現價79元</th></tr></thead>
+      <tbody>
+        <tr><td>20倍（偏保守）</td><td class="num">69.4 元</td><td class="num negv">-12.2%</td></tr>
+        <tr><td>25倍（貼近近四季水準）</td><td class="num">86.8 元</td><td class="num pos">+9.8%</td></tr>
+        <tr><td>30倍（偏樂觀，貼近同業平均氛圍）</td><td class="num">104.1 元</td><td class="num pos">+31.8%</td></tr>
+      </tbody>
+    </table>
+    <p>可以看到目標價對倍數假設非常敏感——20倍到30倍的差距，換算目標價就有近50%的落差，這不是預測，只是攤開「不同樂觀程度下大概對應什麼價位」給你自己判斷。</p>
+  </div>
+
+  <div class="card">
+    <div class="rule-title"><h3>與獨立第三方DCF估值的交叉比對</h3></div>
+    <p>另有 <cite index="74-1">第三方研究以DCF估算寶雅合理區間約在500至700元（分割前基礎），並指出現價落在區間上緣</cite>，換算成分割後基礎約 <b>50～70元</b>。目前股價 79 元已經站上這個 DCF 估值上緣之上，換句話說，若採信這份獨立研究的假設，目前股價已經比它估出的「合理價上限」還要高，屬於相對偏貴的訊號——但這份研究本身發布於7月初（分割前股價699元時），也可能尚未反映後續7月營收創新高、8月獲利動能等更新資訊，兩者需要並陳看待，不宜只採信其中一方。</p>
+  </div>
+
+  <div class="callout warn">
+    <b>預估不確定性揭露：</b>本步驟使用的法人年度獲利預估，來源為AI自動彙整的財經頁面而非可逐一查證的券商原始報告，數字精確度有限；且寶雅過去在法說會中<cite index="51-1">尚未對2027、2028年提出正式量化財測</cite>，本節無法提供N+2年度（2027年）EPS預估區間，這是誠實的資料缺口，而非疏漏，如果你有特定券商的正式研究報告，我可以進一步比對校正。
   </div>
 </section>
 </main>
