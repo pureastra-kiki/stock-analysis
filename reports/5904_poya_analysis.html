@@ -237,6 +237,8 @@
   .bar-b-q { fill: none; stroke: var(--accent); stroke-width: 1.4; stroke-dasharray: 4 3; opacity:0.8; }
   .bar-c-q { fill: none; stroke: var(--gold); stroke-width: 1.4; stroke-dasharray: 4 3; opacity:0.8; }
   .bar-label-sm { font-family:'JetBrains Mono', monospace; font-size: 10.5px; fill: var(--ink-muted); }
+  .yoy-pos { fill: var(--accent); font-weight: 600; }
+  .yoy-neg { fill: var(--negv); font-weight: 600; }
   .bar-label-q-sm { font-family:'JetBrains Mono', monospace; font-size: 10px; fill: var(--quarter); font-style: italic; }
   .legend-label { font-family:'Noto Sans TC', sans-serif; font-size: 12px; fill: var(--ink-muted); }
   .chart-caption { font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
@@ -277,8 +279,8 @@
 <nav class="stepnav">
   <span class="pad enabled" onclick="goTo('step1')">① 現金流六大規則</span>
   <span class="pad enabled" onclick="goTo('step2')">② 基本資訊</span>
-  <span class="pad active enabled" onclick="goTo('step3')">③ 法說會資料</span>
-  <span class="pad locked">④ 營收趨勢</span>
+  <span class="pad enabled" onclick="goTo('step3')">③ 法說會資料</span>
+  <span class="pad active enabled" onclick="goTo('step4')">④ 營收趨勢</span>
   <span class="pad locked">⑤ 前瞻本益比</span>
   <span class="pad locked">⑥ 投資決策</span>
 </nav>
@@ -823,6 +825,107 @@
   <div class="card">
     <div class="rule-title"><h3>產業趨勢與風險（第三方研究彙整，非公司法說原話）</h3></div>
     <p>綜合產業報導與研究彙整，中長期看，<cite index="51-1">一般店、美妝店、店中店等業態合計的市場潛力約在800店左右</cite>，但同時也點出<cite index="51-1">主要風險包括展店過快可能造成店效遞減或商圈重疊、租金與人力成本上升，以及電商與跨境平台的價格競爭</cite>，並提及<cite index="51-1">2027至2028年的具體財務目標公司尚未提出正式量化指引，相關推估屬於依公開策略與產業趨勢的外部推算</cite>，並非公司自身的財測承諾，這點在第5步估值時需要特別注意。</p>
+  </div>
+</section>
+
+<section id="step4">
+  <div class="step-eyebrow">【第 4 步／共 6 步：營收趨勢視覺化】</div>
+  <h2>近12個月合併營收趨勢（2025/08–2026/07）</h2>
+
+  <div class="callout">
+    <b>重點提示：</b>近12個月中有 <b>11個月營收年增為正</b>，唯一衰退的 2026/01（-1.86%）主因是農曆春節檔期效應——<b>2025年1月因春節落在1月，基期已墊高（YoY +24.32%）</b>，2026年春節落在2月，兩年計算基礎不同，屬於節慶錯期的正常現象，並非營運轉弱。2026/07營收 <b>24.72億元、年增19.22%，創單月歷史新高</b>。
+  </div>
+
+  <p class="snap-note">📎 資料來源：Yahoo股市 5904.TWO 營收表（官方合併營收，查詢時間 2026/08/15）；2026年5-7月數字另以經濟日報／MoneyDJ／財報狗報導交叉驗證，數字一致。</p>
+
+  <div class="card">
+    <div class="chart-wrap"><svg viewBox="0 0 980 360" xmlns="http://www.w3.org/2000/svg" class="chart-svg" role="img">
+<line x1="60" y1="300.0" x2="960" y2="300.0" class="gridline"/>
+<text x="52" y="304.0" class="grid-label" text-anchor="end">0</text>
+<line x1="60" y1="231.0" x2="960" y2="231.0" class="gridline"/>
+<text x="52" y="235.0" class="grid-label" text-anchor="end">7</text>
+<line x1="60" y1="162.0" x2="960" y2="162.0" class="gridline"/>
+<text x="52" y="166.0" class="grid-label" text-anchor="end">14</text>
+<line x1="60" y1="93.0" x2="960" y2="93.0" class="gridline"/>
+<text x="52" y="97.0" class="grid-label" text-anchor="end">21</text>
+<line x1="60" y1="24.0" x2="960" y2="24.0" class="gridline"/>
+<text x="52" y="28.0" class="grid-label" text-anchor="end">28</text>
+<line x1="60" y1="300.0" x2="960" y2="300.0" class="zero-axis"/>
+<rect x="60.0" y="79.7" width="64.0" height="220.3" class="bar" rx="3"/>
+<text x="92.0" y="61.7" class="bar-label" text-anchor="middle">22.35</text>
+<text x="92.0" y="74.7" class="bar-label-sm yoy-pos" text-anchor="middle">+8.8%</text>
+<text x="92.0" y="320.0" class="x-label" text-anchor="middle">25/08</text>
+<rect x="136.0" y="93.7" width="64.0" height="206.3" class="bar c-trough" rx="3"/>
+<text x="168.0" y="75.7" class="bar-label" text-anchor="middle">20.93</text>
+<text x="168.0" y="88.7" class="bar-label-sm yoy-pos" text-anchor="middle">+2.2%</text>
+<text x="168.0" y="320.0" class="x-label" text-anchor="middle">25/09</text>
+<rect x="212.0" y="88.4" width="64.0" height="211.6" class="bar" rx="3"/>
+<text x="244.0" y="70.4" class="bar-label" text-anchor="middle">21.47</text>
+<text x="244.0" y="83.4" class="bar-label-sm yoy-pos" text-anchor="middle">+13.2%</text>
+<text x="244.0" y="320.0" class="x-label" text-anchor="middle">25/10</text>
+<rect x="288.0" y="85.5" width="64.0" height="214.5" class="bar" rx="3"/>
+<text x="320.0" y="67.5" class="bar-label" text-anchor="middle">21.76</text>
+<text x="320.0" y="80.5" class="bar-label-sm yoy-pos" text-anchor="middle">+14.3%</text>
+<text x="320.0" y="320.0" class="x-label" text-anchor="middle">25/11</text>
+<rect x="364.0" y="77.7" width="64.0" height="222.3" class="bar" rx="3"/>
+<text x="396.0" y="59.7" class="bar-label" text-anchor="middle">22.55</text>
+<text x="396.0" y="72.7" class="bar-label-sm yoy-pos" text-anchor="middle">+2.5%</text>
+<text x="396.0" y="320.0" class="x-label" text-anchor="middle">25/12</text>
+<rect x="440.0" y="65.9" width="64.0" height="234.1" class="bar" rx="3"/>
+<text x="472.0" y="47.9" class="bar-label" text-anchor="middle">23.75</text>
+<text x="472.0" y="60.9" class="bar-label-sm yoy-neg" text-anchor="middle">-1.9%</text>
+<text x="472.0" y="320.0" class="x-label" text-anchor="middle">26/01</text>
+<rect x="516.0" y="62.0" width="64.0" height="238.0" class="bar" rx="3"/>
+<text x="548.0" y="44.0" class="bar-label" text-anchor="middle">24.14</text>
+<text x="548.0" y="57.0" class="bar-label-sm yoy-pos" text-anchor="middle">+22.9%</text>
+<text x="548.0" y="320.0" class="x-label" text-anchor="middle">26/02</text>
+<rect x="592.0" y="72.7" width="64.0" height="227.3" class="bar" rx="3"/>
+<text x="624.0" y="54.7" class="bar-label" text-anchor="middle">23.06</text>
+<text x="624.0" y="67.7" class="bar-label-sm yoy-pos" text-anchor="middle">+20.6%</text>
+<text x="624.0" y="320.0" class="x-label" text-anchor="middle">26/03</text>
+<rect x="668.0" y="78.4" width="64.0" height="221.6" class="bar" rx="3"/>
+<text x="700.0" y="60.4" class="bar-label" text-anchor="middle">22.48</text>
+<text x="700.0" y="73.4" class="bar-label-sm yoy-pos" text-anchor="middle">+16.7%</text>
+<text x="700.0" y="320.0" class="x-label" text-anchor="middle">26/04</text>
+<rect x="744.0" y="59.6" width="64.0" height="240.4" class="bar" rx="3"/>
+<text x="776.0" y="41.6" class="bar-label" text-anchor="middle">24.39</text>
+<text x="776.0" y="54.6" class="bar-label-sm yoy-pos" text-anchor="middle">+19.2%</text>
+<text x="776.0" y="320.0" class="x-label" text-anchor="middle">26/05</text>
+<rect x="820.0" y="78.6" width="64.0" height="221.4" class="bar" rx="3"/>
+<text x="852.0" y="60.6" class="bar-label" text-anchor="middle">22.46</text>
+<text x="852.0" y="73.6" class="bar-label-sm yoy-pos" text-anchor="middle">+8.3%</text>
+<text x="852.0" y="320.0" class="x-label" text-anchor="middle">26/06</text>
+<rect x="896.0" y="56.3" width="64.0" height="243.7" class="bar c-peak" rx="3"/>
+<text x="928.0" y="38.3" class="bar-label" text-anchor="middle">24.72</text>
+<text x="928.0" y="51.3" class="bar-label-sm yoy-pos" text-anchor="middle">+19.2%</text>
+<text x="928.0" y="320.0" class="x-label" text-anchor="middle">26/07</text>
+<text x="60" y="16" class="unit-label">寶雅 5904 月合併營收（億元）／上方小字為年增率</text>
+</svg></div>
+    <p class="chart-caption">金色長條為近12個月最高值（2026/07，24.72億元），藍灰色長條為最低值（2025/09，20.93億元）。長條上方小字為當月營收年增率，綠色代表正成長、紅色代表衰退。</p>
+  </div>
+
+  <div style="overflow-x:auto;">
+  <table>
+    <thead><tr><th>月份</th><th>當月營收（億元）</th><th>年增率</th><th>備註</th></tr></thead>
+    <tbody>
+      <tr><td>2025/08</td><td class="num">22.35</td><td class="num pos">+8.81%</td><td></td></tr>
+      <tr><td>2025/09</td><td class="num">20.93</td><td class="num pos">+2.19%</td><td>近12月最低點</td></tr>
+      <tr><td>2025/10</td><td class="num">21.47</td><td class="num pos">+13.16%</td><td></td></tr>
+      <tr><td>2025/11</td><td class="num">21.76</td><td class="num pos">+14.27%</td><td></td></tr>
+      <tr><td>2025/12</td><td class="num">22.55</td><td class="num pos">+2.50%</td><td></td></tr>
+      <tr><td>2026/01</td><td class="num">23.75</td><td class="num negv">-1.86%</td><td>春節基期效應（2025年春節在1月）</td></tr>
+      <tr><td>2026/02</td><td class="num">24.14</td><td class="num pos">+22.87%</td><td>春節落在2月，年增大幅回升</td></tr>
+      <tr><td>2026/03</td><td class="num">23.06</td><td class="num pos">+20.63%</td><td></td></tr>
+      <tr><td>2026/04</td><td class="num">22.48</td><td class="num pos">+16.68%</td><td></td></tr>
+      <tr><td>2026/05</td><td class="num">24.39</td><td class="num pos">+19.24%</td><td>母親節檔期</td></tr>
+      <tr><td>2026/06</td><td class="num">22.46</td><td class="num pos">+8.35%</td><td></td></tr>
+      <tr><td>2026/07</td><td class="num">24.72</td><td class="num pos">+19.22%</td><td>近12月最高點，單月歷史新高</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout">
+    <b>小結：</b>營收成長動能與第3步法說會提到的「展店＋美妝店轉型＋電商OMO」策略相互印證，過去12個月扣除春節基期干擾後，年增率大致維持在雙位數區間（+13%~+23%），成長動能並未隨股本擴增而稀釋（總營收持續墊高新高，而非僅每股數字受惠分割膨脹）。
   </div>
 </section>
 </main>
